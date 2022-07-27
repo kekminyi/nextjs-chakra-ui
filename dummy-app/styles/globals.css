@@ -24,3 +24,17 @@ a {
     background: black;
   }
 }
+
+.sidebar-items {
+  color: gray;
+  font-size: large;
+  margin-bottom: 1em;
+}
+
+.sidebar-items p {
+  margin-left: 1em;
+}
+
+.sidebar-items:hover {
+  color: #fff;
+}
