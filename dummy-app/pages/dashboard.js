@@ -1,12 +1,4 @@
-import {
-  Flex,
-  Heading,
-  Link,
-  Icon,
-  Text,
-  Divider,
-  Spacer,
-} from "@chakra-ui/react";
+import { Flex, Heading, Divider } from "@chakra-ui/react";
 import React from "react";
 import {
   FiHome,
@@ -43,7 +35,11 @@ export default function dashboard() {
             </Heading>
             <Flex flexDir="column" align="flex-start" justifyContent="center">
               <IconLink iconName={FiHome} text="Home"></IconLink>
-              <IconLink iconName={FiUpload} text="Upload"></IconLink>
+              <IconLink
+                href={"/uploadData"}
+                iconName={FiUpload}
+                text="Upload"
+              ></IconLink>
               <Divider></Divider>
               <IconLink
                 iconName={FiChevronsRight}
@@ -58,7 +54,7 @@ export default function dashboard() {
         </Flex>
       </Flex>
       {/* Column 2 */}
-      <Flex w="80%" p="2%" flexDir="column" overflow="auto">
+      <Flex w="85%" p="2%" flexDir="column" overflow="auto">
         <Flex>
           <Flex w="50%" mr={30}>
             <ExerciseTable exerciseDay="Push"></ExerciseTable>
